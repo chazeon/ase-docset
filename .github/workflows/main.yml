@@ -26,10 +26,6 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v3
 
-      - name: Install dependencies
-        run: |
-          python3 -m pip install -e ./ase[docs]
-          
       - name: Build documents
         run: |
           make doc
