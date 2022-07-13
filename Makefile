@@ -1,8 +1,8 @@
 ASE_DIR=ase
-DOCSET_ROOT=lammps.docset
+DOCSET_ROOT=ase.docset
 DOCSET_DOCS=$(DOCSET_ROOT)/Contents/Resources/Documents
 
-docset: doc
+docset:
 	rm -rv $(DOCSET_DOCS) || true
 	mkdir -p $(DOCSET_DOCS)
 	cp -rv $(ASE_DIR)/doc/build/html/* $(DOCSET_DOCS)
