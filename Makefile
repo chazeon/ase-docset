@@ -10,7 +10,7 @@ docset:
 
 doc:
 	git clone https://gitlab.com/ase/ase.git $(ASE_DIR)
-	pip install -e ./ase[docs]
+	python3 -m pip install -e ./ase[docs]
 	$(MAKE) -C $(ASE_DIR)/doc html
 
 clean:
